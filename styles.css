@@ -1163,4 +1163,175 @@ body {
     .ideal-users-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* Swipe System Section */
+.swipe-system {
+    padding: 6rem 0;
+    background: var(--purple-50);
+    position: relative;
+    overflow: hidden;
+}
+
+.swipe-modes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+
+.swipe-mode {
+    background: white;
+    border-radius: 24px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(107,70,193,0.08);
+}
+
+.swipe-mode h3 {
+    font-family: var(--font-display);
+    color: var(--purple-800);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.swipe-interface {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.phone-frame {
+    width: 300px;
+    height: 600px;
+    background: #1a1a1a;
+    border-radius: 40px;
+    padding: 10px;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.interface-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.swipe-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.swipe-card {
+    background: white;
+    border-radius: 20px;
+    padding: 1.5rem;
+    width: 100%;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+.swipe-card:hover {
+    transform: translateY(-10px);
+}
+
+.profile-info h4 {
+    font-family: var(--font-display);
+    color: var(--purple-800);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.profile-info p {
+    color: var(--gray-600);
+    margin-bottom: 1rem;
+}
+
+.compatibility, .room-details {
+    background: var(--purple-50);
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.compatibility span, .room-details span {
+    display: block;
+    color: var(--purple-700);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.match-reasons, .amenities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.match-reasons span, .amenities span {
+    background: var(--purple-100);
+    color: var(--purple-700);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.swipe-features {
+    flex: 1;
+}
+
+.swipe-features .feature {
+    margin-bottom: 2rem;
+}
+
+.swipe-features h4 {
+    font-family: var(--font-display);
+    color: var(--purple-800);
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.swipe-features p {
+    color: var(--gray-600);
+    line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+    .swipe-modes {
+        grid-template-columns: 1fr;
+    }
+    
+    .swipe-interface {
+        flex-direction: column;
+    }
+    
+    .phone-frame {
+        width: 280px;
+        height: 560px;
+    }
+}
+
+@media (max-width: 768px) {
+    .swipe-mode {
+        padding: 1.5rem;
+    }
+    
+    .phone-frame {
+        width: 240px;
+        height: 480px;
+    }
+} 
+@media (max-width: 600px) {
+    .ideal-users-grid {
+        grid-template-columns: 1fr;
+    }
 } 
